@@ -28,7 +28,7 @@ function generatePassword() {
       document.getElementById("passwordLength").value
     );
 
-    if (passwordLength < 8 || passwordLength > 20) {
+    if (passwordLength < 8 || passwordLength > 35) {
       alert("Password length must be between 8 and 20 characters.");
       return "";
     }
