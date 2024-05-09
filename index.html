@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Light Switch</title>
+    <title>Generate-PWD</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Light Starts -->
-    <div class="light">
-      <div id="light"></div>
+    <section class="light">
+      <article id="light"></div>
       <div id="light-btn-container">
         <button class="light-btn" onclick="switchOn()">Switch On</button>
         <button class="light-btn" onclick="switchOff()">Switch Off</button>
       </div>
-    </div>
+      </article>
+    </section>
     <!-- Light Ends -->
 
     <!-- Generate Password Starts -->
-    <div class="generatePassword">
-      <div class="checkBox">
+    <section class="generatePassword">
+      <article class="checkBox">
         <label
           ><input type="checkbox" id="lowercaseCheckbox" checked />Include
           lowercase letters</label
@@ -42,11 +43,11 @@
         /></label>
         <button id="generateButton">Generate Password</button>
         <input type="text" id="password" readonly />
-      </div>
-    </div>
+      </article>
+    </section>
     <!-- Generate Password Ends -->
 
-    <script src="./assets/js/switch-on-off.js"></script>
+    
     <script src="./assets/js/generate-password.js"></script>
   </body>
 </html>

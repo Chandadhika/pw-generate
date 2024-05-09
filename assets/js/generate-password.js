@@ -1,6 +1,6 @@
 function generatePassword() {
-    const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
     const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
     const numbers = "0123456789";
     const specialChars = "!@#$%^&*()-_+=<>?";
 
@@ -78,6 +78,16 @@ function generatePassword() {
       .join("");
 
     return password;
+  }
+
+  function switchOn() {
+    var light = document.getElementById("light");
+    light.style.backgroundImage = "url('./assets/images/switch-on.png')"; // switch on
+  }
+  
+  function switchOff() {
+    var light = document.getElementById("light");
+    light.style.backgroundImage = "url('./assets/images/switch-off.png')"; // switch off
   }
 
   document
