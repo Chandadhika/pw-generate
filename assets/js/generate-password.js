@@ -6,11 +6,11 @@ function generatePassword() {
 
     let allChars = "";
 
-    if (document.getElementById("lowercaseCheckbox").checked) {
-      allChars += lowercaseChars;
-    }
     if (document.getElementById("uppercaseCheckbox").checked) {
       allChars += uppercaseChars;
+    }
+    if (document.getElementById("lowercaseCheckbox").checked) {
+      allChars += lowercaseChars;
     }
     if (document.getElementById("numbersCheckbox").checked) {
       allChars += numbers;
@@ -36,17 +36,17 @@ function generatePassword() {
     let password = "";
 
     // Ensure at least one character type from each category
-    if (document.getElementById("lowercaseCheckbox").checked) {
-      const lowercaseChar = lowercaseChars.charAt(
-        Math.floor(Math.random() * lowercaseChars.length)
-      );
-      password += lowercaseChar;
-    }
     if (document.getElementById("uppercaseCheckbox").checked) {
       const uppercaseChar = uppercaseChars.charAt(
         Math.floor(Math.random() * uppercaseChars.length)
       );
       password += uppercaseChar;
+    }
+    if (document.getElementById("lowercaseCheckbox").checked) {
+      const lowercaseChar = lowercaseChars.charAt(
+        Math.floor(Math.random() * lowercaseChars.length)
+      );
+      password += lowercaseChar;
     }
     if (document.getElementById("numbersCheckbox").checked) {
       const numberChar = numbers.charAt(
